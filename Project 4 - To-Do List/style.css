@@ -1,0 +1,108 @@
+/* ===== Reset & Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ===== Container Styles ===== */
+.todo-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Header ===== */
+header h1 {
+  text-align: center;
+  color: #0083b0;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Input Section ===== */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.input-section input:focus {
+  border-color: #0083b0;
+}
+
+.input-section button {
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: #0083b0;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.input-section button:hover {
+  background-color: #006b90;
+}
+
+/* ===== Task List ===== */
+.task-list {
+  list-style: none;
+}
+
+.task-list li {
+  background-color: #f1f1f1;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li span {
+  flex-grow: 1;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* ===== Buttons for Each Task ===== */
+.task-list button {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #0083b0;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.task-list button:hover {
+  color: #005f73;
+}
